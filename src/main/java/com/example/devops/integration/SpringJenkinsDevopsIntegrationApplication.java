@@ -9,14 +9,11 @@ import javax.annotation.PostConstruct;
 
 @SpringBootApplication
 public class SpringJenkinsDevopsIntegrationApplication {
-
 	private static Logger logger = LoggerFactory.getLogger(SpringJenkinsDevopsIntegrationApplication.class);
-
 	@PostConstruct
 	public void init() {
 		logger.info("Application Started...");
 	}
-
 	public static void main(String[] args) {
 		logger.info("Application Executed...");
 		SpringApplication.run(SpringJenkinsDevopsIntegrationApplication.class, args);
