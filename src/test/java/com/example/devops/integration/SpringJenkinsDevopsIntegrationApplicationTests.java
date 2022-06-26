@@ -8,9 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 class SpringJenkinsDevopsIntegrationApplicationTests {
-
 	private static Logger logger = LoggerFactory.getLogger(SpringJenkinsDevopsIntegrationApplicationTests.class);
-
 	@Test
 	void contextLoads() {
 		logger.info("Test Case executing");

@@ -16,6 +16,7 @@ public class SpringJenkinsDevopsIntegrationApplication {
 	public void init() {
 		logger.info("Application Started...");
 	}
+
 	public static void main(String[] args) {
 		logger.info("Application Executed...");
 		SpringApplication.run(SpringJenkinsDevopsIntegrationApplication.class, args);
