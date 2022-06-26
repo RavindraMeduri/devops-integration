@@ -1,0 +1,24 @@
+package com.example.devops.integration;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import javax.annotation.PostConstruct;
+
+@SpringBootApplication
+public class SpringJenkinsDevopsIntegrationApplication {
+
+	private static Logger logger = LoggerFactory.getLogger(SpringJenkinsDevopsIntegrationApplication.class);
+
+	@PostConstruct
+	public void init() {
+		logger.info("Application Started...");
+	}
+	public static void main(String[] args) {
+		logger.info("Application Executed...");
+		SpringApplication.run(SpringJenkinsDevopsIntegrationApplication.class, args);
+	}
+
+}
